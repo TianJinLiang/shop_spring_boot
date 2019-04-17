@@ -19,7 +19,7 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * @author 木鱼 muyu@yiji.com
+ * @author 木鱼 tianjinliang@yiji.com
  * @version 2016/03/14
  */
 
@@ -45,10 +45,10 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         resolver.setMaxUploadSize(10240000);
         return resolver;
     }
-
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources*").addResourceLocations("/resources/");
-    }
+//
+//    @Override
+//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+//        registry.addResourceHandler("/resources*").addResourceLocations("/resources/");
+//    }
 
 }
