@@ -22,6 +22,7 @@ import java.util.Locale;
  * @author 木鱼 muyu@yiji.com
  * @version 2016/03/14
  */
+
 @Configuration
 @EnableSpringDataWebSupport
 public class WebConfig extends WebMvcConfigurerAdapter {
@@ -45,10 +46,9 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         return resolver;
     }
 
-/*
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources*//**").addResourceLocations("/resources/");
-    }*/
+        registry.addResourceHandler("/resources*").addResourceLocations("/resources/");
+    }
 
 }
