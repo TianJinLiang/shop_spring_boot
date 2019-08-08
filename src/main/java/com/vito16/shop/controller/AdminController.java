@@ -30,7 +30,7 @@ import java.util.Date;
 /**
  * @author Vito zhouwentao16@gmail.com
  * @date 2013-7-8
- * 这个注释真不错
+ * 这个注释真不错，真啊真不错！
  */
 @Controller
 @RequestMapping("/admin")
