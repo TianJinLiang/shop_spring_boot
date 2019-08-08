@@ -54,6 +54,18 @@ public class AdminController {
         return "admin/news/newsAdmin";
     }
 
+
+    //xx访问接口
+    @RequestMapping(value = "/news", method = RequestMethod.GET)
+    public String news3(Model model,HttpServletRequest request) {
+        Page<News> page = new Page<News>(request);
+        newsService.findNews(page);
+        model.addAttribute("page",page);
+        return "admin/news/newsAdmin";
+    }
+
+
+
     @RequestMapping(value = "/reg", method = RequestMethod.GET)
     public String reg() {
         return "admin/adminReg";
