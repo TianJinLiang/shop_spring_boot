@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 登录校验
- * @author tjl muyu@yiji.com
+ * @author muyu muyu@yiji.com
  * @version 2017/2/8
  */
 @Component
