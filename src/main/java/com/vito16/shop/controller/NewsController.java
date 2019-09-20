@@ -27,6 +27,7 @@ import org.springframework.web.servlet.ModelAndView;
  * @author Vito zhouwentao16@gmail.com
  * @date 2013-7-8
  * @desc 今天天气很黑
+ *
  */
 @Controller
 @RequestMapping("/news")
@@ -49,6 +50,16 @@ public class NewsController {
         News news = newsService.findById(id);
         model.addObject("news", news);
         model.setViewName("news/newsDetail");
+        return model;
+    }
+
+    //淘宝添加商户接口
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public ModelAndView viewNews2(@PathVariable Integer id,ModelAndView model, HttpServletRequest request) {
+        News news = newsService.findById(id);
+        model.addObject("news", news);
+        model.setViewName("news/newsDetail");
+        System.out.println("***");
         return model;
     }
 
