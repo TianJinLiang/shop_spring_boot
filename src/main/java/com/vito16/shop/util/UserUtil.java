@@ -8,7 +8,7 @@ import com.vito16.shop.model.User;
 /**
  * 用户工具类
  * 
- * @author Vito
+ * @author tjl
  *
  */
 public class UserUtil {
@@ -43,6 +43,16 @@ public class UserUtil {
      * @param session
      */
     public static void deleteUserFromSession(HttpSession session) {
+        session.removeAttribute(USER);
+    }
+
+    /**
+     * 从Session中删除登陆用户的个人信息
+     *
+     * @param session
+     */
+    public static void deleteUserFromSession1(HttpSession session) {
+        System.out.println("****");
         session.removeAttribute(USER);
     }
 }
