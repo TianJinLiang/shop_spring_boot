@@ -55,4 +55,16 @@ public class UserUtil {
         System.out.println("****");
         session.removeAttribute(USER);
     }
+
+
+    /**
+     * 从Session中删除登陆用户的个人信息.
+     *
+     * @param session
+     */
+    public static void deleteUserFromSession2(HttpSession session) {
+        System.out.println("****----");
+        session.removeAttribute(USER);
+    }
+
 }
